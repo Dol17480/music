@@ -1,0 +1,13 @@
+<h1>Artists and Albums</h1>
+
+<% @albums.each do |album| %>
+<b> Name: </b>
+<p><%= album.name %></p>
+<b> Artist ID: </b>
+<p><%= album.artist_id %></p>
+<b> Artist: </b>
+<p><%= album.artist %></p>
+
+<a href="/library/<%=album.id%>">View</a>
+<hr>
+<% end %>
